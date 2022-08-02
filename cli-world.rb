@@ -5,11 +5,11 @@
 class CliWorld < Formula
   desc ""
   homepage "https://github.com/devenes/cli-world"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
-    url "https://github.com/devenes/cli-world/releases/download/v0.0.2/cli-world_0.0.2_darwin_all.tar.gz"
-    sha256 "dcad0777d79ab4ed2c28778f2610b473c7533a3cdbcc8df3f93adb818b854344"
+    url "https://github.com/devenes/cli-world/releases/download/v0.0.3/cli-world_0.0.3_darwin_all.tar.gz"
+    sha256 "edb929f257a6037695c5001685d473ade77158967616e2c505c683a51ddf7f0b"
 
     def install
       bin.install "cli-world"
@@ -18,16 +18,16 @@ class CliWorld < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devenes/cli-world/releases/download/v0.0.2/cli-world_0.0.2_linux_arm64.tar.gz"
-      sha256 "3918068ba80c5d05b393b8155e50ec479089be04bdbc4fbbbc4dfeb2c6110f54"
+      url "https://github.com/devenes/cli-world/releases/download/v0.0.3/cli-world_0.0.3_linux_arm64.tar.gz"
+      sha256 "71d37dc4666d46fd056adab34272861c6d2b4fbb85f481e9be003bb22526a33a"
 
       def install
         bin.install "cli-world"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/devenes/cli-world/releases/download/v0.0.2/cli-world_0.0.2_linux_amd64.tar.gz"
-      sha256 "73ecea069d262a5ee71dc5e8fef9baa1b7fe64cf1603791231e78419fbf24fb3"
+      url "https://github.com/devenes/cli-world/releases/download/v0.0.3/cli-world_0.0.3_linux_amd64.tar.gz"
+      sha256 "374b75f16e47b916776596867f2bd50ea8d909f0a3123caf4f75243bc08248ac"
 
       def install
         bin.install "cli-world"
